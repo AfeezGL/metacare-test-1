@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Gelion";
+  src: local("Gelion"), url(./fonts/Gelion\ Black.ttf) format("truetype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Gelion";
+  src: local("Gelion"),
+    url(./fonts/Gelion\ Black\ Italic.ttf) format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gelion";
+  src: local("Gelion"), url(./fonts/Gelion\ Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Gelion";
+  src: local("Gelion"), url(./fonts/Gelion\ Bold\ Italic.ttf) format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gelion";
+  src: local("Gelion"), url(./fonts/Gelion\ SemiBold.ttf) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Gelion";
+  src: local("Gelion"),
+    url(./fonts/Gelion\ SemiBold\ Italic.ttf) format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gelion";
+  src: local("Gelion"), url(./fonts/Gelion\ Medium.ttf) format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Gelion";
+  src: local("Gelion"),
+    url(./fonts/Gelion\ Medium\ Italic.ttf) format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gelion";
+  src: local("Gelion"), url(./fonts/Gelion\ Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gelion";
+  src: local("Gelion"),
+    url(./fonts/Gelion\ Regular\ Italic.ttf) format("truetype");
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gelion";
+  src: local("Gelion"), url(./fonts/Gelion\ Light.ttf) format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Gelion";
+  src: local("Gelion"),
+    url(./fonts/Gelion\ Light\ Italic.ttf) format("truetype");
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Gelion";
+  src: local("Gelion"), url(./fonts/Gelion\ Thin.ttf) format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Gelion";
+  src: local("Gelion"), url(./fonts/Gelion\ Thin\ Italic.ttf) format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
