@@ -70,6 +70,9 @@ nav header p {
   fill: var(--primary-color);
 }
 
-main {
+/*-------------------------- MAIN DISPLAY --------------------------------*/
+
+.display {
   width: 100%;
+  padding-right: 40px;
 }
