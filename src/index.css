@@ -3,8 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --primary-color: #6837ef;
+  --secondary-color: #25bb87;
+  --border-color: #ecebf5;
+  --bold-text-color: #060213;
+  --normal-text-color: #696d8c;
+}
 html {
   font-family: "Gelion";
+  font-size: 18px;
 }
 body {
   background-color: #fff;
@@ -17,11 +25,51 @@ body {
   display: flex;
   gap: 40px;
 }
+
+/*-------------------------- NAVIGATION --------------------------------*/
+
 nav {
   width: 100%;
   max-width: 262px;
   height: 100%;
+  border-right: 1px solid var(--border-color);
+  padding: 22px;
 }
+nav header {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+nav header p {
+  color: var(--normal-text-color);
+}
+
+/*-------------------------- NAVIGATION COLLAPSE --------------------------------*/
+
+.collapse-button span {
+  color: var(--normal-text-color);
+}
+.collapse-button svg {
+  margin-top: -3px;
+  margin-right: 16px;
+}
+.collapse-button path {
+  fill: var(--normal-text-color);
+}
+.collapse-arrow {
+  color: var(--normal-text-color);
+  transition: transform 0.35s ease;
+  transform-origin: 0.5em 50%;
+}
+.collapse ul {
+  list-style-type: none;
+}
+[aria-expanded="true"] span {
+  color: var(--primary-color);
+}
+[aria-expanded="true"] path {
+  fill: var(--primary-color);
+}
+
 main {
   width: 100%;
 }
