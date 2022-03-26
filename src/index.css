@@ -76,3 +76,9 @@ nav header p {
   width: 100%;
   padding-right: 40px;
 }
+
+/*--------------------------------- CHART CONTAINER --------------------------------*/
+.percentage-green {
+  background-color: rgba(37, 187, 135, 0.1);
+  color: var(--secondary-color);
+}
