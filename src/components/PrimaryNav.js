@@ -3,6 +3,7 @@ import { ReactComponent as CalendarIcon } from "../icons/calendar.svg";
 import { ReactComponent as ChatIcon } from "../icons/chat.svg";
 import { ReactComponent as CheckIcon } from "../icons/check.svg";
 import { ReactComponent as ClockIcon } from "../icons/clock.svg";
+import DummyNavLinks from "./DummyNavLinks";
 
 const PrimaryNav = () => {
   return (
@@ -33,22 +34,7 @@ const PrimaryNav = () => {
           </div>
 
           <div className="collapse" id="admin">
-            <ul>
-              <li className="d-inline-flex align-items-center">
-                <a href="/docs/5.0/components/accordion/" className="active">
-                  Teams
-                </a>
-              </li>
-              <li className="d-inline-flex align-items-center">
-                <a href="/docs/5.0/components/alerts/">Knowledge Base</a>
-              </li>
-              <li className="d-inline-flex align-items-center">
-                <a href="/docs/5.0/components/alerts/">Training SAM</a>
-              </li>
-              <li className="d-inline-flex align-items-center">
-                <a href="/docs/5.0/components/alerts/">Help Center</a>
-              </li>
-            </ul>
+            <DummyNavLinks />
           </div>
         </div>
         <div>
@@ -67,20 +53,7 @@ const PrimaryNav = () => {
           </div>
 
           <div className="collapse" id="knowledge-base">
-            <ul>
-              <li className="d-inline-flex align-items-center">
-                <a href="/docs/5.0/components/accordion/">Teams</a>
-              </li>
-              <li className="d-inline-flex align-items-center">
-                <a href="/docs/5.0/components/alerts/">Knowledge Base</a>
-              </li>
-              <li className="d-inline-flex align-items-center">
-                <a href="/docs/5.0/components/alerts/">Training SAM</a>
-              </li>
-              <li className="d-inline-flex align-items-center">
-                <a href="/docs/5.0/components/alerts/">Help Center</a>
-              </li>
-            </ul>
+            <DummyNavLinks />
           </div>
         </div>
         <div className="mb-1">
@@ -99,20 +72,7 @@ const PrimaryNav = () => {
           </div>
 
           <div className="collapse" id="train-sam">
-            <ul>
-              <li className="d-inline-flex align-items-center">
-                <a href="/docs/5.0/components/accordion/">Teams</a>
-              </li>
-              <li className="d-inline-flex align-items-center">
-                <a href="/docs/5.0/components/alerts/">Knowledge Base</a>
-              </li>
-              <li className="d-inline-flex align-items-center">
-                <a href="/docs/5.0/components/alerts/">Training SAM</a>
-              </li>
-              <li className="d-inline-flex align-items-center">
-                <a href="/docs/5.0/components/alerts/">Help Center</a>
-              </li>
-            </ul>
+            <DummyNavLinks />
           </div>
         </div>
         <div className="mb-1">
@@ -131,20 +91,7 @@ const PrimaryNav = () => {
           </div>
 
           <div className="collapse" id="agent-inbox">
-            <ul>
-              <li className="d-inline-flex align-items-center">
-                <a href="/docs/5.0/components/accordion/">Teams</a>
-              </li>
-              <li className="d-inline-flex align-items-center">
-                <a href="/docs/5.0/components/alerts/">Knowledge Base</a>
-              </li>
-              <li className="d-inline-flex align-items-center">
-                <a href="/docs/5.0/components/alerts/">Training SAM</a>
-              </li>
-              <li className="d-inline-flex align-items-center">
-                <a href="/docs/5.0/components/alerts/">Help Center</a>
-              </li>
-            </ul>
+            <DummyNavLinks />
           </div>
         </div>
         <div className="mb-1">
@@ -163,20 +110,7 @@ const PrimaryNav = () => {
           </div>
 
           <div className="collapse" id="help-center">
-            <ul>
-              <li className="d-inline-flex align-items-center">
-                <a href="/docs/5.0/components/accordion/">Teams</a>
-              </li>
-              <li className="d-inline-flex align-items-center">
-                <a href="/docs/5.0/components/alerts/">Knowledge Base</a>
-              </li>
-              <li className="d-inline-flex align-items-center">
-                <a href="/docs/5.0/components/alerts/">Training SAM</a>
-              </li>
-              <li className="d-inline-flex align-items-center">
-                <a href="/docs/5.0/components/alerts/">Help Center</a>
-              </li>
-            </ul>
+            <DummyNavLinks />
           </div>
         </div>
         <div className="mb-1">
@@ -195,20 +129,7 @@ const PrimaryNav = () => {
           </div>
 
           <div className="collapse" id="analytics">
-            <ul>
-              <li className="d-inline-flex align-items-center">
-                <a href="/docs/5.0/components/accordion/">Teams</a>
-              </li>
-              <li className="d-inline-flex align-items-center">
-                <a href="/docs/5.0/components/alerts/">Knowledge Base</a>
-              </li>
-              <li className="d-inline-flex align-items-center">
-                <a href="/docs/5.0/components/alerts/">Training SAM</a>
-              </li>
-              <li className="d-inline-flex align-items-center">
-                <a href="/docs/5.0/components/alerts/">Help Center</a>
-              </li>
-            </ul>
+            <DummyNavLinks />
           </div>
         </div>
       </div>
