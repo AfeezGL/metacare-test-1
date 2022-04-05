@@ -1,11 +1,12 @@
-import AverageResponseTime from "../components/AverageResponseTime";
+import ChartComponent from "../components/ChartComponent";
 import TeamsNav from "../components/TeamsNav";
 import { collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import db from "../firebase";
+import Spinner from "../components/Spinner";
 
 const Teams = () => {
-  const [chartData, setChartData] = useState(null);
+  const [allChartData, setAllChartData] = useState(null);
 
   useEffect(() => {
     const getData = async () => {
@@ -16,7 +17,7 @@ const Teams = () => {
         data: chart.data(),
       }));
 
-      setChartData(data);
+      setAllChartData(data);
     };
 
     getData();
@@ -39,7 +40,13 @@ const Teams = () => {
         </form>
       </header>
       <main>
-        <AverageResponseTime />
+        {allChartData ? (
+          allChartData.map((chart) => (
+            <ChartComponent chartData={chart} key={chart.id} />
+          ))
+        ) : (
+          <Spinner />
+        )}
       </main>
     </>
   );
