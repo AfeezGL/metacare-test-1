@@ -37,12 +37,15 @@ body {
 nav header {
   border: 1px solid var(--border-color);
   border-radius: 8px;
+  padding: 12px;
 }
 nav header p {
   color: var(--normal-text-color);
+  line-height: 12px;
+  margin-bottom: 0;
 }
 
-/*-------------------------- NAVIGATION COLLAPSE --------------------------------*/
+/*-------------------------- NAVIGATION COLLAPSE ----------------------------*/
 
 .collapse-button span {
   color: var(--normal-text-color);
