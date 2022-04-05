@@ -1,3 +1,5 @@
+import CustomNavLink from "./CustomNavLink";
+
 const TeamsNav = () => {
   return (
     <nav
@@ -7,13 +9,15 @@ const TeamsNav = () => {
       className="border-top border-bottom mb-3 [ secondary-nav ]"
     >
       <div className="d-flex">
-        <a href="">Efficiency</a>
+        <CustomNavLink to={"/"}>Efficiency</CustomNavLink>
 
-        <a href="">Volume</a>
+        <CustomNavLink to={"volume"}>Volume</CustomNavLink>
 
-        <a href="">Customer satisfaction</a>
+        <CustomNavLink to={"customer/satisfaction"}>
+          Customer satisfaction
+        </CustomNavLink>
 
-        <a href="">Backlog</a>
+        <CustomNavLink to={"/backlog"}>Backlog</CustomNavLink>
       </div>
     </nav>
   );

@@ -13,8 +13,8 @@ const PrimaryNav = () => {
       className="primary-nav"
     >
       <header>
-        <h1>Metacare</h1>
-        <p>adeyinka@metacare.app</p>
+        <p className="bold">Metacare</p>
+        <small>adeyinka@metacare.app</small>
       </header>
       <div>
         <div className="mb-1">

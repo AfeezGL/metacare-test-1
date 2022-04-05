@@ -9,6 +9,7 @@ const Layout = () => {
       {/* this is the main container for all pages */}
       <Routes>
         <Route path="/" element={<Teams />} />
+        <Route path="*" element={<Teams />} />
       </Routes>
     </div>
   );
