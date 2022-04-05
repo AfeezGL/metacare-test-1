@@ -12,23 +12,22 @@
 }
 html {
   font-family: "Gelion";
-  font-size: 18px;
 }
 body {
+  color: var(--normal-text-color);
+  font-size: 18px;
+  font-weight: 400;
   background-color: #fff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 #root {
   height: 100vh;
   width: 100vw;
   display: flex;
-  gap: 40px;
 }
 
 /*-------------------------- NAVIGATION --------------------------------*/
 
-nav {
+.primary-nav {
   width: 100%;
   max-width: 262px;
   height: 100%;
@@ -55,7 +54,7 @@ nav header p {
 .collapse-button path {
   fill: var(--normal-text-color);
 }
-.collapse-arrow {
+.collapse-button i {
   color: var(--normal-text-color);
   transition: transform 0.35s ease;
   transform-origin: 0.5em 50%;
@@ -63,6 +62,14 @@ nav header p {
 .collapse ul {
   list-style-type: none;
 }
+a {
+  text-decoration: none;
+  color: var(--normal-text-color);
+}
+.collapse .active {
+  color: var(--bold-text-color);
+}
+/* change text and icon color when collapse is open */
 [aria-expanded="true"] span {
   color: var(--primary-color);
 }
@@ -74,11 +81,77 @@ nav header p {
 
 .display {
   width: 100%;
-  padding-right: 40px;
 }
 
+main {
+  padding: 0 24px;
+}
+
+.secondary-nav {
+  padding: 0 24px;
+}
+.secondary-nav a {
+  padding: 16px 16px 16px 0;
+}
+a:hover {
+  color: var(--bold-text-color);
+}
+.page-header {
+  padding: 36px 24px;
+}
+.filter-form {
+  display: flex;
+  gap: 24px;
+}
+.filter-form > * {
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 10px 16px;
+}
+.filter-form input[type="submit"] {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+.filter-form select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("./icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 16px) center;
+  padding-right: 48px;
+}
 /*--------------------------------- CHART CONTAINER --------------------------------*/
+.chart-section {
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+}
+.chart-container {
+  border-right: 1px solid var(--border-color);
+  padding: 24px;
+  flex-grow: 1;
+}
+.chart-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+.chart-aside > div {
+  width: 210px;
+}
+
 .percentage-green {
   background-color: rgba(37, 187, 135, 0.1);
   color: var(--secondary-color);
+}
+canvas {
+  max-height: 230px;
+}
+.bold {
+  color: var(--bold-text-color);
+  font-weight: 500;
 }

@@ -10,6 +10,7 @@ const Nav = () => {
       role={"navigation"}
       aria-roledescription="Primary"
       aria-label="Primary"
+      className="primary-nav"
     >
       <header>
         <h1>Metacare</h1>
@@ -34,7 +35,9 @@ const Nav = () => {
           <div className="collapse" id="admin">
             <ul>
               <li className="d-inline-flex align-items-center">
-                <a href="/docs/5.0/components/accordion/">Teams</a>
+                <a href="/docs/5.0/components/accordion/" className="active">
+                  Teams
+                </a>
               </li>
               <li className="d-inline-flex align-items-center">
                 <a href="/docs/5.0/components/alerts/">Knowledge Base</a>
