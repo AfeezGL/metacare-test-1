@@ -80,7 +80,8 @@ a {
 /*-------------------------- MAIN DISPLAY --------------------------------*/
 
 .display {
-  width: 100%;
+  flex-grow: 1;
+  overflow-y: scroll;
 }
 
 main {
@@ -120,12 +121,14 @@ a:hover {
   background-repeat: no-repeat;
   background-position: calc(100% - 16px) center;
   padding-right: 48px;
+  background-color: #fff;
 }
 /*--------------------------------- CHART CONTAINER --------------------------------*/
 .chart-section {
   width: 100%;
   display: flex;
   border-radius: 10px;
+  margin-bottom: 24px;
 }
 .chart-container {
   border-right: 1px solid var(--border-color);
@@ -141,7 +144,8 @@ a:hover {
   padding: 24px;
 }
 .chart-aside > div {
-  width: 220px;
+  width: 100%;
+  max-width: 220px;
 }
 
 .percentage-green {
