@@ -4,7 +4,7 @@ import { ReactComponent as ChatIcon } from "../icons/chat.svg";
 import { ReactComponent as CheckIcon } from "../icons/check.svg";
 import { ReactComponent as ClockIcon } from "../icons/clock.svg";
 
-const Nav = () => {
+const PrimaryNav = () => {
   return (
     <nav
       role={"navigation"}
@@ -216,4 +216,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default PrimaryNav;
