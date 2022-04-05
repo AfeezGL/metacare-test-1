@@ -50,8 +50,8 @@ const ChartComponent = ({ chartData }) => {
       {
         label: chartData.data.name,
         data: chartData.data.numbers.map((data) => data.number),
-        borderColor: "rgb(255, 99, 132)",
-        backgroundColor: "rgba(255, 99, 132, 0.5)",
+        borderColor: chartData.data.color,
+        backgroundColor: "#fff",
         pointStyle: "circle",
         pointRadius: 7,
         pointHoverRadius: 8,
@@ -66,15 +66,32 @@ const ChartComponent = ({ chartData }) => {
     >
       <div className=" [ chart-container ]">
         <header className="mb-3">
-          <h2
-            className="me-3 [ bold ] fs-5 d-inline"
-            id="average-response-time"
-          >
-            {chartData.data.name}
-          </h2>
-          <span className="pt-1 pb-1 ps-3 pe-3 [ percentage-green ]">
-            +4.41%
-          </span>
+          <div>
+            <h2
+              className="me-3 [ bold ] fs-5 d-inline"
+              id="average-response-time"
+            >
+              {chartData.data.name}
+            </h2>
+            <span className="pt-1 pb-1 ps-3 pe-3 [ percentage-green ]">
+              +4.41%
+            </span>
+          </div>
+          <div className="[ chart-header-right ]">
+            <div className="[ priority ]">
+              <div
+                className="[ color ]"
+                style={{ backgroundColor: chartData.data.color }}
+              ></div>
+              <div className="[ bold ]">High Priority</div>
+            </div>
+            <select>
+              <option value="This month" selected>
+                This month
+              </option>
+              <option value="Last month">Last Month</option>
+            </select>
+          </div>
         </header>
         <Line data={data} options={options} />
       </div>

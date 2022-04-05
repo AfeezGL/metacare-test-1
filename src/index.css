@@ -142,6 +142,50 @@ a:hover {
   padding: 24px;
   flex-grow: 1;
 }
+
+.chart-container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.percentage-green {
+  background-color: rgba(37, 187, 135, 0.1);
+  color: var(--secondary-color);
+}
+.chart-header-right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.priority {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  border-right: 1px solid var(--border-color);
+  height: 24px;
+  padding-right: 1rem;
+}
+.chart-container select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-image: url(./icons/darkCalendar.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 16px) center;
+  padding: 8px 64px 8px 16px;
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+.color {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+canvas {
+  max-height: 230px;
+}
+
 .chart-aside {
   display: flex;
   flex-direction: column;
@@ -155,13 +199,6 @@ a:hover {
   max-width: 220px;
 }
 
-.percentage-green {
-  background-color: rgba(37, 187, 135, 0.1);
-  color: var(--secondary-color);
-}
-canvas {
-  max-height: 230px;
-}
 .bold {
   color: var(--bold-text-color);
   font-weight: 500;
