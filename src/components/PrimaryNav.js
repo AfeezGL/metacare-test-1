@@ -13,12 +13,12 @@ const PrimaryNav = () => {
       aria-label="Primary"
       className="primary-nav"
     >
-      <header>
+      <header className="mb-3">
         <p className="bold">Metacare</p>
         <small>adeyinka@metacare.app</small>
       </header>
       <div>
-        <div className="mb-1">
+        <div className="mb-3">
           <div
             className="d-flex align-items-center justify-content-between [ collapse-button ]"
             type="button"
@@ -37,7 +37,7 @@ const PrimaryNav = () => {
             <DummyNavLinks />
           </div>
         </div>
-        <div>
+        <div className="mb-3">
           <div
             className="d-flex align-items-center justify-content-between [ collapse-button ]"
             type="button"
@@ -56,7 +56,7 @@ const PrimaryNav = () => {
             <DummyNavLinks />
           </div>
         </div>
-        <div className="mb-1">
+        <div className="mb-3">
           <div
             className="d-flex align-items-center justify-content-between [ collapse-button ]"
             type="button"
@@ -75,7 +75,7 @@ const PrimaryNav = () => {
             <DummyNavLinks />
           </div>
         </div>
-        <div className="mb-1">
+        <div className="mb-3">
           <div
             className="d-flex align-items-center justify-content-between [ collapse-button ]"
             type="button"
@@ -94,7 +94,7 @@ const PrimaryNav = () => {
             <DummyNavLinks />
           </div>
         </div>
-        <div className="mb-1">
+        <div className="mb-3">
           <div
             className="d-flex align-items-center justify-content-between [ collapse-button ]"
             type="button"
@@ -113,7 +113,7 @@ const PrimaryNav = () => {
             <DummyNavLinks />
           </div>
         </div>
-        <div className="mb-1">
+        <div className="mb-3">
           <div
             className="d-flex align-items-center justify-content-between [ collapse-button ]"
             type="button"
