@@ -104,8 +104,32 @@ main {
 a:hover {
   color: var(--bold-text-color);
 }
+
+/*-------------------------- PAGE HEADER -----------------------------*/
+
 .page-header {
   padding: 36px 24px;
+}
+.notification {
+  gap: 4px;
+  border-right: 1px solid var(--border-color);
+  padding-right: 24px;
+}
+.notification > svg {
+  width: 20px;
+  height: 20px;
+}
+.notification-badge {
+  background-color: #f25a68;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 4px;
+}
+.user {
+  padding: 0 24px;
 }
 .filter-form {
   display: flex;
