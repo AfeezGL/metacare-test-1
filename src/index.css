@@ -76,6 +76,9 @@ a {
 [aria-expanded="true"] path {
   fill: var(--primary-color);
 }
+[aria-expanded="true"] i {
+  transform: rotate(90deg);
+}
 
 /*-------------------------- MAIN DISPLAY --------------------------------*/
 
